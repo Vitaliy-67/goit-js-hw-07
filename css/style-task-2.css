@@ -1,0 +1,10 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .gallery li {
+    flex: 1 0 25%;  
+    margin: 5px;
+  }
