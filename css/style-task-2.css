@@ -1,4 +1,4 @@
-.gallery {
+/* .gallery {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -7,4 +7,22 @@
   .gallery li {
     flex: 1 0 25%;  
     margin: 5px;
-  }
+  } */
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.gallery li {
+    flex: 1 0 320px;
+    margin: 10px;
+}
+
+.gallery li img {
+    width: 520px;
+    height: auto;
+}

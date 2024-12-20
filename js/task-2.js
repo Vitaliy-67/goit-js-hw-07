@@ -35,10 +35,10 @@ const createGalleryCard = (pictureInfo) => {
   `;
 };
 
-const galleryCardTemplate = images.map(imag => createGalleryCard(imag)).join('');
+const galleryCardTemplate = images
+  .map((imag) => createGalleryCard(imag))
+  .join("");
 
-console.log(galleryCardTemplate);
+const galleryListEl = document.querySelector(".gallery");
 
-const galleryListEl = document.querySelector('.gallery');
-
-galleryListEl.innerHTML = galleryCardTemplate;
+galleryListEl.insertAdjacentHTML('afterbegin', galleryCardTemplate);
